@@ -279,3 +279,25 @@ select {
 .dot-indicators > [aria-selected="true"] {
     background-color: hsl( var(--clr-white) / 1);
 }
+
+
+
+.num-indicators > button {
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    border: 1px solid hsl( var(--clr-white) / .1);
+    border-radius: 50%;
+    padding: 0 1em;
+}
+
+.num-indicators > button:hover,
+.num-indicators > button:focus {
+    border-color: hsl( var(--clr-white) / 1);
+}
+
+.num-indicators > [aria-selected="true"] {
+    background-color: hsl( var(--clr-white) / 1);
+    color: hsl( var(--clr-dark));
+}
