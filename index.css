@@ -131,6 +131,8 @@ select {
 
 /* general */
 
+[hidden] { display: none !important; }
+
 .flex {
     display: flex;
     gap: var(--gap, 1rem)
