@@ -16,3 +16,10 @@ navToggle.addEventListener('click', () => {
 })
 
 
+const destinations = Array.from(document.querySelectorAll('.destination-navigation li'))
+
+destinations.forEach(destination => {
+    destination.addEventListener('click', () => {
+        const dataObj = null
+    })
+})
