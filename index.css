@@ -133,6 +133,7 @@ select {
 
 [hidden] { display: none !important; }
 
+
 .flex {
     display: flex;
     gap: var(--gap, 1rem)
@@ -464,6 +465,10 @@ select {
 /* ----------------------------- */
 /* Page specific background      */
 /* ----------------------------- */
+html {
+    /* scrollbar-gutter: auto; */
+}
+
 body {
     background-size: cover;
     background-position: bottom center;
@@ -556,6 +561,7 @@ body {
 .grid-container--destination > picture {
     grid-area: image;
     max-width: 60%;
+    align-self: start;
 }
 
 .grid-container--destination > .tab-list {
@@ -671,8 +677,7 @@ body {
             '. image tabs .'
             '. image content .';
     }
-    .grid-container--destination > picture,
-    .grid-container--crew > picture {
+    .grid-container--destination > picture {
         max-width: 90%;
     }
 
@@ -690,23 +695,23 @@ body {
     /* crew */
     
     .grid-container--crew {
+        grid-template-columns: minmax(1rem, 1fr) minmax(0, 37rem) minmax(0, 23rem) minmax(1rem, 1fr);
+        justify-items: start;
         grid-template-areas: 
             '. title image .'
             '. content image .'
             '. tabs image .';
     }
 
-    .grid-container--crew > .dot-indicators {
-        justify-self: start;
-    }
 
     .grid-container--crew > picture {
+        grid-column: span 2;
         align-self: end;
+        max-width: 90%;
     }
 
     .grid-container--crew > .crew-details {
-        justify-self: start;
-    
+        max-width: 100%;
     }
 }
 
