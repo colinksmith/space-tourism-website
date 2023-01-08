@@ -102,6 +102,7 @@ body {
 img,
 picture {
     max-width: 100%;
+    max-height: 100%;
     display: block;
 }
 
@@ -600,6 +601,7 @@ body {
 .grid-container--crew > picture {
     grid-area: image;
     max-width: 70%;
+    height: 35vh;
     border-bottom: 1px solid hsl( var(--clr-white) / .1);
 }
 
@@ -620,8 +622,6 @@ body {
 /* technology layout */
 
 .grid-container--technology {
-    padding-inline: 0;
-    /* --flow-space: 2rem; */
     grid-template-columns: minmax(1rem, 1fr) minmax(0, 40rem) minmax(1rem, 1fr);
     grid-template-areas: 
         '. title .'
@@ -669,7 +669,10 @@ body {
             'content'
             'tabs'
             'image';
-        
+    }
+
+    .grid-container--crew > picture {
+        height: auto;
     }
 
     /* technology */
@@ -754,12 +757,13 @@ body {
     .grid-container--technology {
         grid-template-columns: minmax(1rem, 1fr) minmax(3rem, 3rem)minmax(0, 37rem) minmax(0, 23rem) minmax(1rem, 1fr);
         grid-template-rows: auto auto 5rem;
-        /* justify-items: start; */
         align-items: center;
         grid-template-areas: 
             '. title title    .     .  '
             '. tabs content image image'
             '.  .       .     .     .';
+        padding-block-end: 0;
+
     }
 
     .technology-details {
