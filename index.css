@@ -641,6 +641,7 @@ body {
 /* technology layout */
 
 .grid-container--technology {
+    padding-inline: 0;
     grid-template-columns: minmax(1rem, 1fr) minmax(0, 40rem) minmax(1rem, 1fr);
     grid-template-areas: 
         '. title .'
