@@ -2,9 +2,9 @@
 
 A space tourism website project from frontend mentor, a website that challenges your frontend development skills. This website shows off semantic HTML, clear language and hidden elements for screen readers, keyboard UI controls, as well as other accessibility features such as aria-labels and limited javascript to ensure a good experience for all users. Layouts are clean, easy to read and change dynamically with screens of different sizes.
 
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
+**Link to project:** https://so-you-want-to-travel-to-space.netlify.app/
 
-![alt tag](http://placecorgi.com/1200/650)
+![space tourism website](https://colinkenjirosmith.netlify.app/images/space-tourism.jpg)
 
 ## How It's Made:
 
