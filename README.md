@@ -6,6 +6,8 @@ A space tourism website project from frontend mentor, a website that challenges 
 
 ![space tourism website](https://colinkenjirosmith.netlify.app/images/space-tourism.jpg)
 
+Compare the landing page results with the original design here: https://www.frontendmentor.io/solutions/space-tourism-multipage-website-BNPUS3nVYq
+
 ## How It's Made:
 
 **Tech used:** HTML, CSS, JavaScript
